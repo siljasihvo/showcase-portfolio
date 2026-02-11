@@ -53,6 +53,19 @@ ul {
     color: var(--primary);
 }
 
+section {
+    padding: 8rem clamp(1.5rem, 15vw, 20rem);
+    position: relative;
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    section {
+        padding: 4rem 1.5rem;
+        text-align: center;
+    }
+}
+
 /* -- Hero -- */ 
 
 .role-list {
@@ -132,9 +145,7 @@ ul {
     width: 100%;
     gap: 30px;
     position: relative;
-    padding-left: 10%;
 }
-
 
 .hero-wrapper::after {
     content: "";
@@ -156,6 +167,89 @@ ul {
     margin-top: 30px;
 }
 
+.scroll-indicator {
+    position: absolute;
+    bottom: 3rem;
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    
+    animation: scroll-bounce 2s infinite ease-in-out;
+    z-index: 10;
+}
+
+.scroll-line {
+    width: 3px;
+    height: 60px;
+    background-color: var(--primary);
+}
+
+.scroll-icon {
+    width: 24px;
+    height: auto;
+    display: block;
+    margin-top: -3px;
+}
+
+@keyframes scroll-bounce {
+    0%, 100% {
+        transform: translate(-50%, 0);
+    }
+    50% {
+        transform: translate(-50%, 15px);
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .role-list {
+        justify-content: center;
+        gap: 30px; 
+        font-weight: 600;
+        letter-spacing: 0.1em;
+    }
+
+    .role-list li:not(:last-child)::after {
+        display: none; 
+    }
+
+    .hero-cta {
+        flex-direction: column;
+        width: 100%;
+        gap: 15px;
+    }
+
+    .view-btn, .contact-btn {
+        width: 100%;
+        padding: 18px 30px;
+    }
+
+    .hero-wrapper::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        width: 200%; 
+        height: 100%;
+        right: -140%; 
+        bottom: 0;
+        transform: none;
+        border-radius: 50%;
+        background: linear-gradient(to bottom, var(--secondary), #ffffff);
+        opacity: 0.5;
+        z-index: -1;
+    }
+
+    .hero-section h1 {
+        font-size: 2.8rem;
+    }
+}
+
 /* -- About -- */
 
 .about {
@@ -163,7 +257,6 @@ ul {
     flex-direction: row;
     gap: 150px;
     background-color: var(--light-gray);
-    padding: 10% 10%;
 }
 
 .about-content {
