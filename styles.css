@@ -731,7 +731,6 @@ section {
     font-family: "Nunito", sans-serif;
 }
 
-
 .cta-btn:hover {
     background-color: #ffffff;
     color: var(--primary);
@@ -744,4 +743,18 @@ section {
         max-width: none;
         padding: 18px 30px;
     }
+}
+
+/* -- Contact -- */
+
+footer {
+    background-color: var(--contrast);
+    text-align: center;
+    padding: 50px 0;
+}
+
+footer p {
+    font-family: "Nunito", sans-serif;
+    font-size: 14px;
+    color: #ffffff;
 }
