@@ -62,6 +62,15 @@ span {
     color: var(--primary);
 }
 
+button {
+    font-family: "Nunito", sans-serif;
+}
+
+a {
+    font-family: "Nunito", sans-serif;
+    text-decoration: none;
+}
+
 section {
     padding: 8rem clamp(1.5rem, 15vw, 20rem);
     position: relative;
@@ -336,9 +345,15 @@ section {
 
 .about-content {
     display: flex;
+    gap: 90px;
+    max-width: 800px;
+}
+
+/* first div of about-content */
+.about-content > div:first-child {
+    display: flex;
     flex-direction: column;
     gap: 30px;
-    max-width: 800px;
 }
 
 .about h2 {
@@ -386,7 +401,7 @@ section {
 }
 
 @media (max-width: 768px) {
-    .about {
+    .about-content {
         flex-direction: column;
         align-items: center;
         text-align: center;
@@ -496,5 +511,177 @@ section {
  
     .skill-description {
         max-width: 100%;
+    }
+}
+
+/* -- Projects -- */
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: var(--contrast);
+}
+
+.projects h2 {
+    color: var(--background-color);
+}
+
+.projects p {
+    color: var(--lighter-font);
+}
+
+.project-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 80px;
+}
+
+.project-card--reverse {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.project-img {
+    height: 100%;
+    max-height: 400px;
+    width: auto;
+    border-radius: 20px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.project-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 650px;
+}
+
+.project-category {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--primary);
+}
+
+.project-title {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+}
+
+.project-tags span {
+    font-size: 14px;
+    color: var(--pink-font);
+}
+
+.project-tags span:not(:last-child)::after {
+    content: '•';
+    margin-left: 8px;
+    color: var(--pink-font);
+}
+
+.project-buttons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding-top: 10px;
+}
+
+.project-buttons .view-btn,
+.project-buttons .contact-btn {
+    padding: 10px 22px;
+    font-size: 16px;
+}
+
+.project-outline-btn {
+    background-color: transparent;
+    border-color: var(--pink-font);
+    color: #ffffff;
+}
+
+.project-outline-btn:hover {
+    background-color: var(--primary);
+    border-color: var(--primary);
+    color: #ffffff;
+}
+
+.project-divider {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.flower-icon {
+    width: 32px;
+    height: 32px;
+    opacity: 0.7;
+}
+
+@media (max-width: 1200px) {
+    .project-card,
+    .project-card--reverse {
+        gap: 50px;
+    }
+
+    .project-img {
+        max-width: 220px;
+    }
+}
+
+@media (max-width: 768px) {
+    .project-card,
+    .project-card--reverse {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .project-img {
+        max-width: 100%;
+        border-radius: 16px;
+    }
+
+    .project-tags {
+        justify-content: center;
+    }
+
+    .project-buttons {
+        justify-content: center;
+    }
+}
+
+.container {
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: row;
+    gap: 90px;
+}
+
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 40px;
     }
 }

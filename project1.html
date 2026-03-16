@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link rel="stylesheet" href="projectdetail.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+			rel="stylesheet" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap"
+			rel="stylesheet" />
+		<title>Silja Sihvo - EasyKitchen</title>
+	</head>
+	<body>
+		<div class="back-wrapper">
+			<a href="index.html" class="back-btn">
+				<span class="back-arrow">&#8592;</span> Back
+			</a>
+		</div>
+
+		<section class="project-hero">
+			<img
+				src="/images/easykitchen-hero.png"
+				alt="EasyKitchen App Mockup"
+				class="hero-img" />
+		</section>
+
+		<section class="project-intro">
+			<h1>EasyKitchen Organisation App</h1>
+
+			<div class="project-meta">
+				<div class="meta-item">
+					<span class="meta-label">Role</span>
+					<span class="meta-value"
+						>UX/UI Designer & Front-End Developer</span
+					>
+				</div>
+				<div class="meta-item">
+					<span class="meta-label">Timeline</span>
+					<span class="meta-value">15 Weeks</span>
+				</div>
+				<div class="meta-item">
+					<span class="meta-label">Tech Stack</span>
+					<span class="meta-value"
+						>Vue.js, Pinia, JavaScript, HTML/CSS</span
+					>
+				</div>
+				<div class="meta-item">
+					<span class="meta-label">Design Tools</span>
+					<span class="meta-value">Figma, Procreate</span>
+				</div>
+			</div>
+		</section>
+
+		<!-- Problem & Solution -->
+		<section class="project-section">
+			<div class="problem-solution">
+				<div class="ps-block">
+					<h3>The Problem</h3>
+					<p>
+						Cooking enthusiasts with large kitchens often struggle
+						to keep track of their inventory, leading to expired
+						food, unnecessary grocery purchases, and ultimately,
+						food waste.
+					</p>
+				</div>
+				<div class="ps-block">
+					<h3>The Solution</h3>
+					<p>
+						EasyKitchen is a mobile-first web app designed to help
+						users track food items, categorize them by location, and
+						receive expiration reminders. It bridges the gap between
+						digital organization and physical kitchen management.
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- 1. Research & Planning -->
+		<section class="project-section">
+			<h2><span class="section-number">01</span> Research & Planning</h2>
+			<p>
+				Before opening Figma or writing code, I needed to define the
+				scope. I conducted a competitive analysis to see what existing
+				apps were missing, and used the MoSCoW method to prioritize
+				features.
+			</p>
+			<ul class="project-list">
+				<li>
+					<strong>Must-Haves:</strong> Core actions (Add/Edit/Remove
+					items), locations, categories, and expiration tracking.
+				</li>
+				<li>
+					<strong>Design Challenge:</strong> Focus strictly on mobile
+					UX from the start.
+				</li>
+			</ul>
+			<div class="img-placeholder">
+				<img
+					src="/images/research.png"
+					alt="MoSCoW prioritization chart" />
+			</div>
+		</section>
+
+		<!-- 2. Design Process -->
+		<section class="project-section">
+			<h2><span class="section-number">02</span> The Design Process</h2>
+
+			<h3>Identity & Branding</h3>
+			<p>
+				I wanted the app to feel fresh and intuitive. I designed the
+				logo in Procreate, iterating through a few sketches before
+				landing on a clean logo that fits the kitchen theme.
+			</p>
+			<div class="img-placeholder">
+				<img src="/images/logo-process.png" alt="Logo design process" />
+			</div>
+
+			<h3>Wireframing & Prototyping</h3>
+			<p>
+				Because I wanted this to feel exactly like a native mobile app,
+				getting the flow perfect was important. I focused entirely on
+				the user journey first, tested early prototypes with friends,
+				classmates and teachers, and then applied the final UI polish.
+			</p>
+			<div class="img-placeholder">
+				<img
+					src="/images/wireframes.png"
+					alt="Lo-fi to hi-fi wireframe comparison" />
+			</div>
+		</section>
+
+		<!-- 3. Development -->
+		<section class="project-section">
+			<h2>
+				<span class="section-number">03</span> Front-End Development
+			</h2>
+			<p>
+				Translating the Figma designs into a functional prototype was
+				done using Vue.js so that I could code in components and have
+				more control over the coding.
+			</p>
+			<p>
+				Since this project focused entirely on the front-end, I needed a
+				way to make the app feel fully functional and dynamic without a
+				traditional backend. I used Pinia to simulate a database
+				structure.
+			</p>
+			<ul class="project-list">
+				<li>
+					<strong>The Setup:</strong> I created a central store
+					containing reactive arrays of objects for the inventory.
+					Each item was assigned an ID, name, category, storage
+					location, and expiration date.
+				</li>
+				<li>
+					<strong>The Result:</strong> Any component in the app could
+					instantly fetch, filter, and display the exact data it
+					needed. This made adding new groceries or updating inventory
+					easy, with changes showing instantly across the whole app.
+				</li>
+			</ul>
+			<div class="img-placeholder">
+				<img src="/images/code.png" alt="Pinia store code snippet" />
+			</div>
+		</section>
+
+		<!-- 4. Takeaways -->
+		<section class="project-section">
+			<h2>
+				<span class="section-number">04</span> Takeaways & Next Steps
+			</h2>
+			<p>
+				Designing specifically for mobile UX challenged me to be
+				incredibly deliberate with screen real estate. Moving forward,
+				potential next steps for the project would include making it
+				into an actual app (with something like XCode) instead of a
+				website "app".
+			</p>
+		</section>
+	</body>
+</html>

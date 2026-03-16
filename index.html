@@ -36,7 +36,7 @@
 
 		<!-- Hero -->
 		<section class="hero-wrapper">
-			<div class="hero-section">
+			<div class="hero-section container">
 				<ul class="role-list">
 					<li>STUDENT</li>
 					<li>FRONT-END DEVELOPER</li>
@@ -64,86 +64,177 @@
 
 		<!-- About -->
 		<section class="about" id="about">
-			<div class="about-content">
-				<h4>01 - ABOUT</h4>
-				<h2>A Little About Me</h2>
-				<p>
-					I am a 2nd year Associate Degree student at
-					<span class="highlight"
-						>Fontys University of Applied Sciences</span
-					>
-					studying
-					<span class="highlight"
-						>Information and Communication Technology</span
-					>.
-				</p>
-				<p>
-					My journey in tech began when I realised that I could use my
-					creativity professionally. Initially, I started with media
-					design, but I soon discovered that coding allowed me to
-					combine that creativity with the joy of learning new skills.
-				</p>
-				<p>
-					I am passionate about building websites and apps that are
-					functional, beautiful, and follow good UX principles. My
-					goal is to produce great designs while constantly improving
-					at writing clean code.
-				</p>
-				<div class="about-bottom">
-					<img src="/images/flowers.png" alt="Flowers" />
-					<div class="about-icons">
-						<img src="/images/linkedin.png" alt="LinkedIn" />
-						<img src="/images/github.png" alt="GitHub" />
+			<div class="about-content container">
+				<div>
+					<h4>01 - ABOUT</h4>
+					<h2>A Little About Me</h2>
+					<p>
+						I am a 2nd year Associate Degree student at
+						<span class="highlight"
+							>Fontys University of Applied Sciences</span
+						>
+						studying
+						<span class="highlight"
+							>Information and Communication Technology</span
+						>.
+					</p>
+					<p>
+						My journey in tech began when I realised that I could
+						use my creativity professionally. Initially, I started
+						with media design, but I soon discovered that coding
+						allowed me to combine that creativity with the joy of
+						learning new skills.
+					</p>
+					<p>
+						I am passionate about building websites and apps that
+						are functional, beautiful, and follow good UX
+						principles. My goal is to produce great designs while
+						constantly improving at writing clean code.
+					</p>
+					<div class="about-bottom">
+						<img src="/images/flowers.png" alt="Flowers" />
+						<div class="about-icons">
+							<img src="/images/linkedin.png" alt="LinkedIn" />
+							<img src="/images/github.png" alt="GitHub" />
+						</div>
 					</div>
 				</div>
+				<img src="/images/selfie.png" alt="Selfie" class="selfie" />
 			</div>
-			<img src="/images/selfie.png" alt="Selfie" class="selfie" />
 		</section>
 
 		<!-- Skills -->
 		<section class="skills-section" id="skills">
-			<h4>02 - Skills</h4>
-			<h2>What I Bring to the Table</h2>
+			<div class="container">
+				<h4>02 - SKILLS</h4>
+				<h2>What I Bring to the Table</h2>
 
-			<div class="skills-list">
-				<div class="skill-card">
-					<div class="skill-header">
-						<span class="skill-title">Frontend Development</span>
-						<span class="skill-icon">
-							<img src="/images/frontend.png" alt="Code Icon" />
-						</span>
+				<div class="skills-list">
+					<div class="skill-card">
+						<div class="skill-header">
+							<span class="skill-title"
+								>Frontend Development</span
+							>
+							<span class="skill-icon">
+								<img
+									src="/images/frontend.png"
+									alt="Code Icon" />
+							</span>
+						</div>
+						<p class="skill-description">
+							Building responsive, interactive websites with
+							modern frameworks and good practices.
+						</p>
+						<div class="skill-tags">
+							<span class="skill-tag">Vue</span>
+							<span class="skill-tag">JavaScript</span>
+							<span class="skill-tag">HTML</span>
+							<span class="skill-tag">CSS</span>
+							<span class="skill-tag">React</span>
+							<span class="skill-tag">Tailwind</span>
+						</div>
 					</div>
-					<p class="skill-description">
-						Building responsive, interactive websites with modern
-						frameworks and good practices.
-					</p>
-					<div class="skill-tags">
-						<span class="skill-tag">Vue</span>
-						<span class="skill-tag">JavaScript</span>
-						<span class="skill-tag">HTML</span>
-						<span class="skill-tag">CSS</span>
-						<span class="skill-tag">React</span>
-						<span class="skill-tag">Tailwind</span>
+
+					<div class="skill-card">
+						<div class="skill-header">
+							<span class="skill-title">UI/UX Design</span>
+							<span class="skill-icon">
+								<img
+									src="/images/design.png"
+									alt="Design Icon" />
+							</span>
+						</div>
+						<p class="skill-description">
+							Designing interfaces that prioritize user experience
+							and accessibility.
+						</p>
+						<div class="skill-tags">
+							<span class="skill-tag">Figma</span>
+							<span class="skill-tag">Prototyping</span>
+							<span class="skill-tag">Wireframing</span>
+							<span class="skill-tag">Design Systems</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Projects -->
+		<section class="projects" id="projects">
+			<div class="container">
+				<h4>03 - PROJECTS</h4>
+				<h2>Selected Projects</h2>
+
+				<div class="project-card">
+					<img
+						src="/images/project1.png"
+						alt="EasyKitchen App"
+						class="project-img" />
+					<div class="project-info">
+						<h4 class="project-category">WEB DEVELOPMENT</h4>
+						<h2>EasyKitchen Organisation App</h2>
+						<p>
+							A website that monitors food freshness and storage
+							locations. Built to solve organisation in your
+							kitchen, lower unnecessary purchases and reduce food
+							waste in households.
+						</p>
+						<div class="project-tags">
+							<span>Vue</span>
+							<span>Pinia</span>
+							<span>Javascript</span>
+							<span>HTML/CSS</span>
+						</div>
+						<div class="project-buttons">
+							<button class="view-btn">View Live</button>
+							<a
+								href="project1.html"
+								class="contact-btn project-outline-btn">
+								Read More
+							</a>
+							<button class="contact-btn project-outline-btn">
+								View Repository
+							</button>
+						</div>
 					</div>
 				</div>
 
-				<div class="skill-card">
-					<div class="skill-header">
-						<span class="skill-title">UI/UX Design</span>
-						<span class="skill-icon">
-							<img src="/images/design.png" alt="Design Icon" />
-						</span>
+				<div class="project-divider">
+					<img
+						src="/images/flower.png"
+						alt="Flower"
+						class="flower-icon" />
+				</div>
+
+				<div class="project-card project-card--reverse">
+					<div class="project-info">
+						<h4 class="project-category">UI/UX DESIGN</h4>
+						<h2>CZ ZorgVinder Improvement</h2>
+						<p>
+							A design enhancement that transforms the CZ
+							ZorgVinder into an empathetic, accessible guide for
+							mental health services. Built with a focus on better
+							user experience and flow on the website, to help CZ
+							customers find what they need faster.
+						</p>
+						<div class="project-tags">
+							<span>Figma</span>
+							<span>Prototyping</span>
+							<span>User Research</span>
+						</div>
+						<div class="project-buttons">
+							<button class="view-btn">View Live</button>
+							<a
+								href="project2.html"
+								class="contact-btn project-outline-btn">
+								Read More
+							</a>
+						</div>
 					</div>
-					<p class="skill-description">
-						Designing interfaces that prioritize user experience and
-						accessibility.
-					</p>
-					<div class="skill-tags">
-						<span class="skill-tag">Figma</span>
-						<span class="skill-tag">Prototyping</span>
-						<span class="skill-tag">Wireframing</span>
-						<span class="skill-tag">Design Systems</span>
-					</div>
+					<img
+						src="/images/project2.png"
+						alt="CZ ZorgVinder"
+						class="project-img" />
 				</div>
 			</div>
 		</section>
