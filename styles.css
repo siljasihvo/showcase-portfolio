@@ -758,3 +758,110 @@ footer p {
     font-size: 14px;
     color: #ffffff;
 }
+
+/* -- Animations -- */
+
+@keyframes fade-up {
+    from { opacity: 0; transform: translateY(30px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50%       { transform: translateY(-8px); }
+}
+
+@keyframes pulse-flower {
+    0%, 100% { transform: scale(1) rotate(0deg); opacity: 0.7; }
+    50%       { transform: scale(1.2) rotate(15deg); opacity: 1; }
+}
+
+.role-list {
+    animation: fade-up 0.6s ease both 0.1s;
+}
+
+.hero-section h1 {
+    animation: fade-up 0.6s ease both 0.25s;
+}
+
+.hero-section > p {
+    animation: fade-up 0.6s ease both 0.4s;
+}
+
+.hero-cta {
+    animation: fade-up 0.6s ease both 0.55s;
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.reveal.revealed {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.reveal:nth-child(2) { transition-delay: 0.1s; }
+.reveal:nth-child(3) { transition-delay: 0.2s; }
+.reveal:nth-child(4) { transition-delay: 0.3s; }
+
+.selfie {
+    animation: float 5s ease-in-out infinite;
+}
+
+.flower-icon {
+    animation: pulse-flower 3s ease-in-out infinite;
+}
+
+.view-btn,
+.contact-btn,
+.cta-btn {
+    transition: background-color 0.3s ease, color 0.3s ease,
+                border-color 0.3s ease, transform 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+.view-btn:hover,
+.contact-btn:hover,
+.cta-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(255, 107, 157, 0.25);
+}
+
+.project-img {
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.project-img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.2);
+}
+
+.contact-socials img,
+.about-icons img {
+    transition: transform 0.25s ease;
+}
+
+.contact-socials img:hover,
+.about-icons img:hover {
+    transform: translateY(-5px);
+}
+
+.skill-tag {
+    display: inline-block;
+    transition: transform 0.2s ease;
+}
+
+.skill-tag:hover {
+    transform: translateY(-2px);
+}
+
+.logo img {
+    transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+    transform: rotate(20deg) scale(1.1);
+}
