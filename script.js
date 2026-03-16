@@ -49,3 +49,22 @@ const revealObserver = new IntersectionObserver(
 );
 
 document.querySelectorAll(".reveal").forEach((el) => revealObserver.observe(el));
+
+
+// burger menu toggle
+const burgerBtn = document.getElementById('burger-btn');
+const nav = document.querySelector('nav');
+
+burgerBtn.addEventListener('click', () => {
+  burgerBtn.classList.toggle('open');
+  nav.classList.toggle('open');
+  header.classList.toggle('menu-open');
+});
+
+document.querySelectorAll('.nav-links a').forEach(link => {
+  link.addEventListener('click', () => {
+    burgerBtn.classList.remove('open');
+    nav.classList.remove('open');
+    header.classList.remove('menu-open');
+  });
+});

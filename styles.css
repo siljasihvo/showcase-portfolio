@@ -149,6 +149,71 @@ section {
   width: 100%;
 }
 
+.burger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  z-index: 1001;
+}
+
+.burger span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: var(--primary);
+  border-radius: 3px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.burger.open span:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+.burger.open span:nth-child(2) { opacity: 0; }
+.burger.open span:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+
+@media (max-width: 768px) {
+  #main-header {
+    padding: 15px 24px;
+    flex-wrap: wrap;
+  }
+
+  .burger {
+    display: flex;
+  }
+
+  nav {
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+
+  nav.open {
+    max-height: 300px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 0;
+    padding: 10px 0 20px;
+  }
+
+  .nav-links li a {
+    display: block;
+    padding: 12px 0;
+  }
+
+  .nav-links a::after {
+    bottom: 0;
+  }
+}
+
+#main-header.menu-open {
+  background-color: var(--background-color);
+}
+
 /* -- Hero -- */ 
 
 .role-list {
@@ -745,7 +810,12 @@ section {
     }
 }
 
-/* -- Contact -- */
+.stuff {
+    max-width: 300px;
+    height: auto;
+}
+
+/* -- Footer -- */
 
 footer {
     background-color: var(--contrast);
