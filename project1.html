@@ -129,11 +129,6 @@
 				the user journey first, tested early prototypes with friends,
 				classmates and teachers, and then applied the final UI polish.
 			</p>
-			<div class="img-placeholder">
-				<img
-					src="/images/wireframes.png"
-					alt="Lo-fi to hi-fi wireframe comparison" />
-			</div>
 		</section>
 
 		<!-- 3. Development -->
@@ -184,5 +179,13 @@
 				website "app".
 			</p>
 		</section>
+
+		<div class="cta-btn">Back To Top</div>
+
+		<script>
+			document.querySelector(".cta-btn").addEventListener("click", () => {
+				window.scrollTo({ top: 0, behavior: "smooth" });
+			});
+		</script>
 	</body>
 </html>

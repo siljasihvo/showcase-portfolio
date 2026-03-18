@@ -97,6 +97,7 @@ span {
     max-height: 500px;
     object-fit: cover;
     border-radius: 20px;
+    object-position: top;
 }
 
 .project-intro,
@@ -174,10 +175,17 @@ span {
     color: var(--primary);
 }
 
-.section-img {
+.img-placeholder img {
     width: 100%;
     border-radius: 16px;
     object-fit: cover;
+}
+
+.img-label {
+    font-family: "Nunito", sans-serif;
+    font-size: 13px;
+    color: var(--lighter-font);
+    padding-top: 10px;
 }
 
 @media (max-width: 768px) {
@@ -199,5 +207,36 @@ span {
     .meta-item {
         flex-direction: column;
         gap: 2px;
+    }
+}
+
+.cta-btn {
+    background-color: var(--primary);
+    color: #ffffff;
+    border: 1.5px solid var(--primary);
+    border-radius: 20px;
+    padding: 24px 44px;
+    cursor: pointer;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    transition: all 0.3s ease;
+    max-width: 250px;
+    font-family: "Nunito", sans-serif;
+    display: block;
+    margin: 40px auto 80px;
+    text-align: center;
+}
+
+.cta-btn:hover {
+    background-color: #ffffff;
+    color: var(--primary);
+    border-color: var(--primary);
+}
+
+@media (max-width: 768px) {
+    .cta-btn {
+        width: 100%;
+        max-width: none;
+        padding: 18px 30px;
     }
 }

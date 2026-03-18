@@ -264,6 +264,8 @@ section {
     font-weight: 500;
     letter-spacing: 0.05em;
     transition: all 0.3s ease;
+    color: var(--contrast);
+
 }
 
 .view-btn:hover {

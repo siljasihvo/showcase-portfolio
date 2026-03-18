@@ -80,11 +80,9 @@
 
 		<!-- 1. Discovery & Research -->
 		<section class="project-section">
-			<h4>
-				<span class="section-number">01 –</span> Discovery & User
-				Research
-			</h4>
-			<h2>Understanding Why It Was Failing</h2>
+			<h2>
+				<span class="section-number">01</span>Discovery & User Research
+			</h2>
 			<p>
 				Before designing anything, I needed to understand why the
 				current platform was failing its users. I conducted competitor
@@ -124,6 +122,9 @@
 				</li>
 			</ul>
 
+			<span class="img-label"
+				>Conclusion of user research and CZ interview</span
+			>
 			<img
 				src="/images/cz-research.png"
 				alt="Research affinity map and competitor analysis"
@@ -132,10 +133,9 @@
 
 		<!-- 2. Ideation & Prototyping -->
 		<section class="project-section">
-			<h4>
-				<span class="section-number">02 –</span> Ideation & Prototyping
-			</h4>
-			<h2>Designing for Clarity</h2>
+			<h2>
+				<span class="section-number">02</span> Ideation & Prototyping
+			</h2>
 			<p>
 				After knowing more about what needed to be changed, I moved into
 				Figma. My goal was to have users find help without needing to
@@ -160,20 +160,23 @@
 					health needs.
 				</li>
 			</ul>
-
+			<span class="img-label">CZ's information on clinics</span>
 			<img
-				src="/images/cz-before-after.png"
+				src="/images/CZ-img.png"
+				alt="Before and after UI comparison"
+				class="section-img" />
+			<span class="img-label">My design on clinic information</span>
+			<img
+				src="/images/CZ-after.png"
 				alt="Before and after UI comparison"
 				class="section-img" />
 		</section>
 
 		<!-- 3. User Testing -->
 		<section class="project-section">
-			<h4>
-				<span class="section-number">03 –</span> User Testing &
-				Iteration
-			</h4>
-			<h2>Shaped by Feedback</h2>
+			<h2>
+				<span class="section-number">03</span> User Testing & Iteration
+			</h2>
 			<p>
 				A core part of this project was continuous testing. The final
 				design wasn't just my initial concept — it was strictly shaped
@@ -199,7 +202,9 @@
 					feedback.
 				</li>
 			</ul>
-
+			<span class="img-label"
+				>Clinic information change after user testing</span
+			>
 			<img
 				src="/images/cz-iterations.png"
 				alt="Component iteration from v1 to final"
@@ -208,11 +213,10 @@
 
 		<!-- 4. Takeaways -->
 		<section class="project-section">
-			<h4><span class="section-number">04 –</span> Final Takeaways</h4>
-			<h2>Empathy as a Design Tool</h2>
+			<h2><span class="section-number">04</span> Final Takeaways</h2>
 			<p>
 				This project reinforced that good UX isn't just about making
-				things look modern — it's about empathy. By listening to how
+				things look modern, it's about empathy. By listening to how
 				actual users navigated their stress and confusion, I was able to
 				transform a frustrating search function into a more accessible
 				tool for people who truly need it.
@@ -223,5 +227,13 @@
 				the <span class="highlight">best out of the whole class.</span>
 			</p>
 		</section>
+
+		<div class="cta-btn">Back To Top</div>
+
+		<script>
+			document.querySelector(".cta-btn").addEventListener("click", () => {
+				window.scrollTo({ top: 0, behavior: "smooth" });
+			});
+		</script>
 	</body>
 </html>
