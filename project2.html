@@ -230,10 +230,16 @@
 
 		<div class="cta-btn">Back To Top</div>
 
+		<div class="lightbox" id="lightbox">
+			<span class="lightbox-close">&times;</span>
+			<img class="lightbox-img" id="lightbox-img" alt="" />
+		</div>
+
 		<script>
 			document.querySelector(".cta-btn").addEventListener("click", () => {
 				window.scrollTo({ top: 0, behavior: "smooth" });
 			});
 		</script>
+		<script src="lightbox.js"></script>
 	</body>
 </html>

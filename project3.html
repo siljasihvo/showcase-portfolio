@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="projectdetail.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+			rel="stylesheet" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap"
+			rel="stylesheet" />
+		<title>Silja Sihvo - CZ ZorgVinder Improvement</title>
+	</head>
+	<body>
+		<div class="back-wrapper">
+			<a href="index.html" class="back-btn">
+				<span class="back-arrow">&#8592;</span> Back
+			</a>
+		</div>
+
+		<section class="project-hero">
+			<img
+				src="/images/owow.png"
+				alt="OWOW Portal Mockup"
+				class="hero-img" />
+		</section>
+
+		<section class="project-intro">
+			<h1>OWOW Client Portal</h1>
+
+			<div class="project-meta">
+				<div class="meta-item">
+					<span class="meta-label">Role</span>
+					<span class="meta-value"
+						>UI/UX Designer & Front-End Developer</span
+					>
+				</div>
+				<div class="meta-item">
+					<span class="meta-label">Timeline</span>
+					<span class="meta-value">6 Weeks</span>
+				</div>
+				<div class="meta-item">
+					<span class="meta-label">Tech Stack</span>
+					<span class="meta-value"
+						>Next.js, CSS Modules, Supabase, Recharts</span
+					>
+				</div>
+				<div class="meta-item">
+					<span class="meta-label">Design Tools</span>
+					<span class="meta-value">Figma</span>
+				</div>
+			</div>
+		</section>
+
+		<!-- Problem & Solution -->
+		<section class="project-section">
+			<div class="problem-solution">
+				<div class="ps-block">
+					<h3>The Problem</h3>
+					<p>
+						OWOW's clients had no central place to track their
+						project's progress, budget, or key contacts. This led to
+						a lot of unnecessary back-and-forth communication that
+						put strain on both the clients and the OWOW team.
+					</p>
+				</div>
+				<div class="ps-block">
+					<h3>The Solution</h3>
+					<p>
+						A dual-sided client portal built in Next.js with a
+						Supabase backend. Clients get a live view of their
+						project status, budget, team contacts, documents, and
+						latest activity all in one place, without having to ask
+						anyone for updates.
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- 1. Research -->
+		<section class="project-section">
+			<h2><span class="section-number">01</span> Research</h2>
+			<p>
+				Before touching Figma or writing any code, I did a competitor
+				analysis on Basecamp and Toggl Track to understand what works
+				well in client-facing dashboards.
+			</p>
+			<ul class="project-list">
+				<li>
+					<strong>Basecamp</strong> showed the value of a clean card
+					based layout where clients can see their project status
+					immediately without scrolling, and an activity feed so they
+					never have to email anyone just to ask what is going on.
+				</li>
+				<li>
+					<strong>Toggl Track</strong> showed how colour coded donut
+					charts and progress bars make budget data easy to understand
+					for clients who have no finance background.
+				</li>
+			</ul>
+			<div class="img-placeholder">
+				<span class="img-label">Key Insights from Research</span>
+				<img
+					src="/images/owow-research.png"
+					alt="Competitor analysis" />
+			</div>
+		</section>
+
+		<!-- 2. Design -->
+		<section class="project-section">
+			<h2><span class="section-number">02</span> Design</h2>
+			<p>
+				I started by making an initial dashboard mockup in Figma
+				following OWOW's visual identity. My group ended up going with a
+				teammate's design as the base, so I focused my design work on
+				the budget page and a few overview cards for the dashboard.
+			</p>
+			<p>
+				For the budget page I went through several iterations, trying
+				out different ways to show the category breakdown. I tested
+				coloured dots, then switched to a left side coloured line border
+				on each row which made the table feel a lot cleaner. I also
+				added colour coded status badges showing CRITICAL, WATCH, and
+				HEALTHY so a client can see budget health at a glance without
+				having to read through numbers. The client was happy with the
+				whole page and liked that the design decisions came from actual
+				research.
+			</p>
+			<div class="img-placeholder">
+				<span class="img-label">1st and 2nd Design Iterations</span>
+				<img
+					src="/images/owow-design.png"
+					alt="OWOW Budget Page Design Iterations" />
+			</div>
+		</section>
+
+		<!-- 3. Development -->
+		<section class="project-section">
+			<h2><span class="section-number">03</span> Development</h2>
+			<p>
+				I was responsible for building the full budget feature across
+				both the admin and client sides of the portal. All budget data
+				is stored in Supabase and fetched live, which was new territory
+				for me and something I had to figure out as I went.
+			</p>
+			<ul class="project-list">
+				<li>
+					<strong>BudgetSnapshot</strong> shows the top level summary
+					with Spent to Date, Remaining, and Total Budget on the left,
+					and a Recharts donut chart on the right breaking the budget
+					into four colour coded categories.
+				</li>
+				<li>
+					<strong>CategoryBreakdown</strong> is a table with progress
+					bars and status badges colour coded by spend threshold. It
+					also has a separate mobile card layout for screens under
+					860px.
+				</li>
+				<li>
+					<strong>RecentTransactions</strong> lists the five most
+					recent transactions with category colour indicators, name,
+					date, and amount.
+				</li>
+				<li>
+					<strong>BudgetAdminDrawer</strong> is a slide-out drawer
+					where OWOW staff can edit budget details and manage
+					disciplines. After saving, the page refreshes automatically
+					so the new data shows straight away.
+				</li>
+				<li>
+					<strong>BudgetStatus widget</strong> is a compact version of
+					the budget info that sits on the client dashboard overview,
+					showing the status badge, current spend, and a link to the
+					full budget page.
+				</li>
+			</ul>
+			<div class="img-placeholder">
+				<span class="img-label">Budget Page Implementation</span>
+				<img src="/images/owow-budget.png" alt="OWOW Budget Page" />
+			</div>
+		</section>
+
+		<!-- 4. Takeaways -->
+		<section class="project-section">
+			<h2><span class="section-number">04</span> Takeaways</h2>
+			<p>
+				The biggest thing I learned on this project was how to work with
+				Supabase and connect my frontend code to a real database so that
+				everything works seamlessly together. Coming from projects where
+				I simulated data with Pinia, actually fetching live data from a
+				backend was a big step forward for me and something I want to
+				keep working on.
+			</p>
+		</section>
+
+		<div class="cta-btn">Back To Top</div>
+
+		<div class="lightbox" id="lightbox">
+			<span class="lightbox-close">&times;</span>
+			<img class="lightbox-img" id="lightbox-img" alt="" />
+		</div>
+
+		<script>
+			document.querySelector(".cta-btn").addEventListener("click", () => {
+				window.scrollTo({ top: 0, behavior: "smooth" });
+			});
+		</script>
+		<script src="lightbox.js"></script>
+	</body>
+</html>
