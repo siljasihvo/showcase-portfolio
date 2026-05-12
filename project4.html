@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link rel="stylesheet" href="projectdetail.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+			rel="stylesheet" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap"
+			rel="stylesheet" />
+		<title>Silja Sihvo - WasabiHub</title>
+	</head>
+	<body>
+		<div class="back-wrapper">
+			<a href="index.html" class="back-btn">
+				<span class="back-arrow">&#8592;</span> Back
+			</a>
+		</div>
+
+		<section class="project-hero">
+			<img
+				src="/images/wasabihub-hero.png"
+				alt="WasabiHub Website Mockup"
+				class="hero-img" />
+		</section>
+
+		<section class="project-intro">
+			<h1>WasabiHub & Wasabi Charity Cup Website</h1>
+
+			<div class="project-meta">
+				<div class="meta-item">
+					<span class="meta-label">Role</span>
+					<span class="meta-value">UI Designer</span>
+				</div>
+				<div class="meta-item">
+					<span class="meta-label">Status</span>
+					<span class="meta-value">In Progress</span>
+				</div>
+				<div class="meta-item">
+					<span class="meta-label">Client</span>
+					<span class="meta-value">Sushikiller, WasabiHub.gg</span>
+				</div>
+				<div class="meta-item">
+					<span class="meta-label">Design Tools</span>
+					<span class="meta-value">Figma, WordPress</span>
+				</div>
+			</div>
+		</section>
+
+		<!-- Problem & Solution -->
+		<section class="project-section">
+			<div class="problem-solution">
+				<div class="ps-block">
+					<h3>The Client</h3>
+					<p>
+						WasabiHub is the online home of Sushikiller, a Dutch
+						Valorant streamer and content creator. The site covers
+						his gaming community, streaming content, and the annual
+						Wasabi Charity Cup, a tournament that raised &euro;8,645
+						for UMC Utrecht Wilhelmina Kinderziekenhuis in its last
+						edition.
+					</p>
+				</div>
+				<div class="ps-block">
+					<h3>The Goal</h3>
+					<p>
+						The existing site lacked a clear visual hierarchy and
+						didn't reflect the energy of the community behind it.
+						The goal was to redesign the homepage to immediately
+						communicate what WasabiHub is, create a stronger first
+						impression, and give the Charity Cup the prominent
+						spotlight it deserves.
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- Design approach -->
+		<section class="project-section">
+			<h2>
+				<span class="section-number">01</span> Rethinking the Homepage
+			</h2>
+			<p>
+				The original homepage presented information in a flat,
+				undifferentiated way, with everything sharing the same visual
+				weight, making it hard to know where to look first. There was no
+				strong hero moment, and the Charity Cup, arguably the most
+				emotionally resonant part of the brand, was buried further down
+				the page.
+			</p>
+			<p>
+				My approach focused on establishing a clear hierarchy from top
+				to bottom: lead with the brand identity, introduce Sushikiller,
+				and give the Charity Cup its own bold section that feels worthy
+				of the cause. I chose a dark theme with a vivid green accent to
+				match the gaming aesthetic of the community while keeping things
+				readable and structured.
+			</p>
+
+			<span class="img-label">Before: original homepage</span>
+			<img
+				src="/images/wasabihub-before.png"
+				alt="WasabiHub homepage before redesign"
+				class="section-img" />
+			<span class="img-label">After: redesigned homepage</span>
+			<img
+				src="/images/wasabihub-after.png"
+				alt="WasabiHub homepage after redesign"
+				class="section-img" />
+		</section>
+
+		<!-- What changed -->
+		<section class="project-section">
+			<h2><span class="section-number">02</span> Key Design Decisions</h2>
+			<p>
+				The hero section was completely reworked to open with a bold
+				typographic statement: "Gaming. Community. Charity." This
+				immediately tells visitors what the site is about in three
+				words. The Sushikiller banner image was repositioned to sit
+				alongside the about text rather than floating disconnected on
+				the page.
+			</p>
+			<p>
+				For the Charity Cup, I designed a dedicated callout block with
+				high contrast and a clear CTA, making it feel like the
+				meaningful annual event that it is rather than just another
+				content section. This structure makes it easier for returning
+				visitors to navigate and for new visitors to instantly
+				understand what WasabiHub stands for.
+			</p>
+		</section>
+
+		<!-- Status note -->
+		<section class="project-section">
+			<h2><span class="section-number">03</span> Current Status</h2>
+			<p>
+				This is an ongoing client project, currently being built out in
+				WordPress. The homepage design has been implemented and the
+				inner pages are still in progress. Working with a real client on
+				a live site has been a valuable experience in balancing design
+				ambitions with practical content and platform constraints.
+			</p>
+		</section>
+
+		<div class="cta-btn">Back To Top</div>
+
+		<div class="lightbox" id="lightbox">
+			<span class="lightbox-close">&times;</span>
+			<img class="lightbox-img" id="lightbox-img" alt="" />
+		</div>
+
+		<script>
+			document.querySelector(".cta-btn").addEventListener("click", () => {
+				window.scrollTo({ top: 0, behavior: "smooth" });
+			});
+		</script>
+		<script src="lightbox.js"></script>
+	</body>
+</html>
